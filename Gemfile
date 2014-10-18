@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby "2.1.1"
+ruby "2.0.0"
 
 group :development do
   gem 'rb-fsevent', '~> 0.9'
