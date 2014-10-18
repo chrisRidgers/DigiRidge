@@ -3,7 +3,6 @@ layout: post
 title: "Well Colour Me Employed!"
 date: 2014-10-04 19:44:57 +0100
 comments: true
-published: false
 categories: Liverpool Mashbo Graduate Employment Job Student Interview
 ---
 
