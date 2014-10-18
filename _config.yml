@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
-simple_search: https://www.google.com/search
-description:
+url: http://www.chris.digiridge.co.uk
+title: DigiRidge
+subtitle: Welcome
+author: Chris Ridgers
+simple_search: http://google.com/search
+description: Personal blog for talking shop and showing my work.
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
