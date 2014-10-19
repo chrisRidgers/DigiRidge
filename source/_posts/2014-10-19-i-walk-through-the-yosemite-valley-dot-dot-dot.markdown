@@ -3,7 +3,7 @@ layout: post
 title: "I walk through the Yosemite Valley..."
 date: 2014-10-19 18:35:12 +0100
 comments: true
-categories: OSX Yosemite Updates Developer Tools XCode
+categories: OS X Yosemite Updates Developer Tools XCode
 ---
 
 ... of Death, I will fear no evil.
@@ -19,10 +19,10 @@ upgrade`` command on my employers web development server).
 This weekend has consisted entirely of me going through upgrade procedures.
 Even this blog you're currently reading is the result of some fairly fiddly
 fiddling from this side of the keyboard.  It's as poor timing would have it that
-just as it was coming together OSX would announce a system update: *Woo Hoo* I
+just as it was coming together OS X would announce a system update: *Woo Hoo* I
 thought.  *Fan Tastic*.  
 
-OSX is a bit of an oddball when it comes to updating its software, particularly
+OS X is a bit of an oddball when it comes to updating its software, particularly
 for Unix-like systems. For starters, the process often includes the removal of
 command line developer tools and revoking of privileges required to use them.
 It's not a particularly developer friendly policy, and it serves as a very swift
@@ -120,8 +120,8 @@ much.  *Sigh*.  Enough of this twaddle.
 
 	$ sudo chown -R $USER /usr/local
 
-And sure enough brew can now update, and my system appears to be in state
-similar to that which it was in prior upgrading.  Aesthetically the update is
+And sure enough brew can now update, and my system appears to be in a state
+similar to that which it was in prior to upgrading.  Aesthetically the update is
 really slick, any iPhone user will recognise it.  Apple apps have already begun
 releasing their new versions, iTunes got the update before I even realised
 Yosemite was upon us.  Functionally, I spend most of my time in a terminal, but
