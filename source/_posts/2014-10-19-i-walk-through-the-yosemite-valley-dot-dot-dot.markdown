@@ -26,7 +26,7 @@ OS X is a bit of an oddball when it comes to updating its software, particularly
 for Unix-like systems. For starters, the process often includes the removal of
 command line developer tools and revoking of privileges required to use them.
 It's not a particularly developer friendly policy, and it serves as a very swift
-kick to remind you that you're choice of platform is heavily embedded within
+kick to remind you that your choice of platform is heavily embedded within
 Apple's upgrade cycle.  Not an issue for OS X/iOS developers I'm sure, but for
 those of us with a less platform specific career pathway it's some extra hoops
 and edge cases that never quite go away and leave us to do our thing.
