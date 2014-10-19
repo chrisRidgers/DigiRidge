@@ -46,8 +46,8 @@ about it.  Turns out the problem lay with my use of the */usr/local* directory.
 
 Within Unix-like systems, it's standard practice to install applications to
 particular directories based on when they are likely to be called and their
-necessary admin privileges.  One of these directories is */usr/local/* .  
-This directory is commonly used to install applications desired by the user, 
+necessary admin privileges.  One of these directories is */usr/local/*. This 
+directory is commonly used to install applications desired by the user, 
 separating them from both the system applications and the users home directory 
 where personal data is stored.  It's just good practice.  Apple bucks the trend 
 a little here by installing most applications into the */Applications* 
