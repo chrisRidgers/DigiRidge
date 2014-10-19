@@ -73,17 +73,21 @@ park.
 *The First Commandment*:  Loving the Yosemite visual makeover, I tentatively
 opened up a terminal and entered my first command:
 
-	$ brew doctor
-	Error: No such file or directory - /Library/Developer/CommandLineTools/usr/bin/clang
+``` console brew doctor 
+$ brew doctor
+Error: No such file or directory - /Library/Developer/CommandLineTools/usr/bin/clang
+```
 
 Of course.  Because why wouldn't Apple remove/ move clang as part of their
 upgrade process.  Fire up XCode, sign my soul away to Apple's licensing
 agreements of the developer tools, back to the terminal and run 
 ``xcode-select --install``.  Done.  Right back to Homebrew:
 
-	$ brew doctor
-	Warning: Your Xcode (6.0.1) is outdated
-	Please install Xcode 6.1.
+``` console brew doctor 
+$ brew doctor
+Warning: Your Xcode (6.0.1) is outdated
+Please install Xcode 6.1.
+```
 
 Flips table and goes to put kettle on.  Right, back to terminal and I check
 manually for updates using ``softwareupdate --list``.  Nada.  Weird.  Open up
@@ -101,24 +105,28 @@ clear.  The patient lives.
 *The patient is trying my patience*:  The next installment of our epic quest for 
 an up to date system:
 
-	$ brew update
-	error: insufficient permission for adding an object to repository database .git/objects
-	fatal: failed to write object
-	fatal: unpack-objects failed
-	Error: Failed to update tap: homebrew/dupes
-	error: Unable to append to .git/logs/refs/remotes/origin/master: Permission denied
-	Error: Failed to update tap: homebrew/php
-	error: insufficient permission for adding an object to repository database .git/objects
-	fatal: failed to write object
-	fatal: unpack-objects failed
-	Error: Failed to update tap: homebrew/versions
-	Updated Homebrew from 6ac736a1 to b7feb05f.
+``` console brew update
+$ brew update
+error: insufficient permission for adding an object to repository database .git/objects
+fatal: failed to write object
+fatal: unpack-objects failed
+Error: Failed to update tap: homebrew/dupes
+error: Unable to append to .git/logs/refs/remotes/origin/master: Permission denied
+Error: Failed to update tap: homebrew/php
+error: insufficient permission for adding an object to repository database .git/objects
+fatal: failed to write object
+fatal: unpack-objects failed
+Error: Failed to update tap: homebrew/versions
+Updated Homebrew from 6ac736a1 to b7feb05f.
+```
 
 At some point during the upgrade process files clearly got copied as a user that
 wasn't me; a quick check with ``ls -l /usr/local/.git/objects`` shows us as 
 much.  *Sigh*.  Enough of this twaddle.
 
-	$ sudo chown -R $USER /usr/local
+``` console chown
+$ sudo chown -R $USER /usr/local
+```
 
 And sure enough brew can now update, and my system appears to be in a state
 similar to that which it was in prior to upgrading.  Aesthetically the update is
