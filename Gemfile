@@ -3,13 +3,13 @@ ruby "2.0.0"
 
 group :development do
   gem 'rb-fsevent', '~> 0.9'
-  gem 'thin'
 end
 
+gem 'thin'
 gem 'sinatra', '~> 1.4.2'
 gem 'mini_magick'
 gem 'stringex', '~> 1.4.0'
-  
+
 gem 'rake', '~> 10.0'
 gem 'jekyll', '~> 2.0'
 gem 'octopress-hooks', '~> 2.2'
