@@ -55,6 +55,11 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     mercenary (0.3.4)
+<<<<<<< HEAD
+=======
+    mini_magick (3.7.0)
+      subexec (~> 0.2.1)
+>>>>>>> d88bf51976744cae4267959e42ee49dd1f291c9f
     octopress-date-format (2.0.1)
       jekyll (~> 2.0)
       octopress-hooks (~> 2.0)
@@ -85,6 +90,10 @@ GEM
       rack-protection (~> 1.4)
       tilt (~> 1.3, >= 1.3.4)
     stringex (1.4.0)
+<<<<<<< HEAD
+=======
+    subexec (0.2.3)
+>>>>>>> d88bf51976744cae4267959e42ee49dd1f291c9f
     tilt (1.4.1)
     timers (4.0.1)
       hitimes
@@ -101,6 +110,10 @@ DEPENDENCIES
   haml (~> 4.0)
   jekyll (~> 2.0)
   jekyll-sitemap
+<<<<<<< HEAD
+=======
+  mini_magick
+>>>>>>> d88bf51976744cae4267959e42ee49dd1f291c9f
   octopress-date-format (~> 2.0)
   octopress-hooks (~> 2.2)
   rake (~> 10.0)

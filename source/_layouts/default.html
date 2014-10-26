@@ -1,0 +1,37 @@
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+{% include head.html %}
+<body>
+  <ul class="ui">
+    <li>
+      <a href="/" >
+	<img src="/images/home.png"/>
+      </a>
+    </li>
+    <li>
+      <a href="/outonthehills/index.html" >
+	<img src="/images/hill.png"/>
+      </a>
+    </li>
+    <li>
+      <a href="/cv/index.html" >
+	<img src="/images/cv.png"/>
+      </a>
+    </li>
+    <li>
+      <a href="/gallery/index.html" >
+	<img src="/images/gallery.png"/>
+      </a>
+    </li>
+  </ul>
+
+  {{ content | expand_urls: root_url }}
+  {% include footer.html %}
+  {% if site.disqus_short_name and page.comments == true %}
+  {% include disqus.html %}
+  {% endif %}
+</body>
+</html>
