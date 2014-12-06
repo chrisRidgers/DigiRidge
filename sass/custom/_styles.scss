@@ -1,6 +1,27 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
+/* @extend this to force long lines of continuous text to wrap */
+.force-wrap {
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.flex-content { max-width: 100%; height: auto; }
+
+.basic-alignment {
+  &.left { float: left; margin-right: 1.5em; }
+  &.right { float: right; margin-left: 1.5em; }
+  &.center { display:block; margin: 0 auto 1.5em; }
+  &.left, &.right { margin-bottom: .8em; }
+}
+
+$sans: "PT Sans", "Helvetica Neue", Arial, sans-serif !default;
+.sans { font-family: $sans; }
+
 ul {
   list-style: circle inside;
 }
@@ -54,3 +75,77 @@ ul {
     }
   }
 }
+
+.side-shadow-border {
+  @include box-shadow(lighten($sidebar-bg, 5) 0 1px);
+}
+
+aside.sidebar {
+	overflow: hidden;
+	color: $sidebar-color;
+	background-color: lighten($sidebar-bg, 2);
+	text-shadow: lighten($sidebar-bg, 8) 0 1px;
+	a { @extend .force-wrap; }
+	section {
+		@extend .sans;
+		font-size: .8em;
+		line-height: 1.4em;
+		margin-bottom: 1.5em;
+		h1 {
+			margin: 1.5em 0 0;
+			padding-bottom: .2em;
+			border-bottom: 1px solid $sidebar-border;
+			@extend .side-shadow-border;
+			+ p {
+				padding-top: .4em;
+			}
+		}
+	}
+	img {
+		@extend .flex-content;
+		@extend .basic-alignment;
+		@include shadow-box($border: #fff .3em solid);
+	}
+	ul {
+		margin-bottom: 0.5em;
+		margin-left: 0;
+	}
+	li {
+		list-style: none;
+		padding: .5em 0;
+		margin: 0;
+		border-bottom: 1px solid $sidebar-border;
+		@extend .side-shadow-border;
+		p:last-child {
+			margin-bottom: 0;
+		}
+	}
+	a {
+		color: inherit;
+		@include transition(color .5s);
+	}
+	&:hover a {
+		color: $sidebar-link-color;
+		&:hover { color: $sidebar-link-color-hover; }
+	}
+}
+.aside-alt-link {
+	color: $sidebar-link-color-subdued;
+	&:hover {
+		color: $sidebar-link-color-subdued-hover;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	aside.sidebar {
+		background-color: transparent;
+
+	}
+}
+
+@media only screen and (min-width: 1428px) {
+	aside.sidebar {
+		background-color: transparent;
+	}
+}
+
