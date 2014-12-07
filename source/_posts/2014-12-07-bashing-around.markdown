@@ -48,7 +48,7 @@ So that's eggs. A more real world example might be something like:
 {% include_code [lang:console ] output.sh-session %}
 
 Which is a standard omelette.  Bash isn't just another language for you to
-write 'Hello World'! in and than put away to maybe pick up again later.  It's a
+write 'Hello World!' in and than put away to maybe pick up again later.  It's a
 full interactive shell capable of directory navigation, file reading and
 writing, execution, user input and through extension of that working with
 scripts.
