@@ -11,7 +11,7 @@ team have been great to work with, and the pace is much quicker then that
 expected of undergrads in university.  There's been new frameworks to learn,
 real working code to read and adapt, new work flow practices to adopt and build
 into my personal routine, deadlines and standards to meet; if you think you
-have it hard in uni with your 9AM's and your (none dissertation) coursework
+have it hard in uni with your 9AM's and your (non dissertation) coursework
 don't worry; it gets harder.
 
 <!-- more -->
